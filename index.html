@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thibault Rigallaud">
+    <meta name="description" content="Portfolio de Thibault Rigallaud">
+    <title>Portfolio - Étudiant BUT R&T</title>
+    <!-- Liens vers les fichiers CSS externes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Lien vers le fichier JavaScript externe -->
+    <script defer src="./styles/script.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio Étudiant</a>
+        </div>
+    </nav>
+
+    <!-- En-tête -->
+    <header class="text-center py-5 bg-light text-dark">
+        <img src="./photos/pp.jpg" alt="Photo de profil" class="profile-img">
+        <h1>Étudiant en BUT Réseaux & Télécommunications</h1>
+        <p>Actuellement étudiant en 1ère année de BUT Réseaux et Télécommunications, je me passionne pour les technologies de communication et leur impact sur notre quotidien.
+           À travers mon parcours, j'ai acquis une solide compréhension des infrastructures réseau, des protocoles de communication, et des systèmes de télécommunication.
+           Toujours curieux et désireux de me perfectionner, je cherche à appliquer mes connaissances théoriques sur des projets concrets afin de relever les défis techniques du secteur
+           Mon objectif est de contribuer à l'évolution des technologies de réseau et de télécom tout en développant des compétences pratiques et professionnelles.</p>
+    </header>
+ <!-- Compétences -->
+ <section class="container section text-dark">
+    <h2>Compétences</h2>
+    <div class="carousel-container">
+      <div class="carousel" id="competences-carousel">
+        <!-- Cartes originales (5 éléments) -->
+        <div class="card">
+          <img src="photos/htmllogo.png" alt="HTML5 Logo">
+          <h3>HTML</h3>
+          <p>Création de sites Web</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/csslogo.png" alt="CSS3 Logo">
+          <h3>CSS</h3>
+          <p>Stylisation de pages</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/js.png" alt="JS Logo">
+          <h3>JavaScript</h3>
+          <p>Interactivité</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+        <div class="card">
+          <img src="photos/bash.png" alt="Linux Logo">
+          <h3>Linux</h3>
+          <p>Administration système</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+        <div class="card">
+          <img src="photos/sql.png" alt="SQL Logo">
+          <h3>SQL</h3>
+          <p>Bases de données</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/java.png" alt="Java Logo">
+          <h3>Java</h3>
+          <p>Initiation à la programation en Java</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/pythonlogo.png" alt="Python Logo">
+          <h3>Python</h3>
+          <p>Projet pacman avec pygame, gestion de log...</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/telecom.png" alt="Télécommunications Logo">
+          <h3>Télécom</h3>
+          <p>Signaux et systèmes pour les transmissions</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/telephonie.png" alt="Téléphonie d'entreprise Logo">
+          <h3>Téléphonie</h3>
+          <p>Initiation à la téléphonie d'entreprise</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/php.png" alt="PHP Logo">
+          <h3>PHP</h3>
+          <p>Site web en PHP</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+        
+        <!-- Duplication exacte des cartes pour la boucle infinie -->
+        <div class="card">
+          <img src="photos/htmllogo.png" alt="HTML5 Logo">
+          <h3>HTML</h3>
+          <p>Création de sites Web</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/csslogo.png" alt="CSS3 Logo">
+          <h3>CSS</h3>
+          <p>Stylisation de pages</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/js.png" alt="JS Logo">
+          <h3>JavaScript</h3>
+          <p>Interactivité</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+        <div class="card">
+          <img src="photos/bash.png" alt="Linux Logo">
+          <h3>Linux</h3>
+          <p>Administration système</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+        <div class="card">
+          <img src="photos/sql.png" alt="SQL Logo">
+          <h3>SQL</h3>
+          <p>Bases de données</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/java.png" alt="Java Logo">
+          <h3>Java</h3>
+          <p>Bases de données</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/pythonlogo.png" alt="Python Logo">
+          <h3>Python</h3>
+          <p>Projet pacman avec pygame, gestion de log...</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/telecom.png" alt="Télécommunications Logo">
+          <h3>Télécom</h3>
+          <p>Signaux et systèmes pour les transmissions</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/telephonie.png" alt="Téléphonie d'entreprise Logo">
+          <h3>Téléphonie</h3>
+          <p>Initiation à la téléphonie d'entreprise</p>
+          <strong>Niveau : Intermédiaire</strong>
+        </div>
+        <div class="card">
+          <img src="photos/php.png" alt="PHP Logo">
+          <h3>PHP</h3>
+          <p>Site web en PHP</p>
+          <strong>Niveau : Débutant</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Section Expériences -->
+    <h2 class="text-center">Mon Parcours et Mes Expériences</h2>
+    <section class="timeline"> 
+      <div class="container">
+          <div class="timeline-item left">
+              <div class="timeline-content">
+                  <h4>🎓 BUT Réseaux & Télécommunications - Blois</h4>
+                  <p>Administration réseaux, téléphonie d'entreprise, programmation, mathématiques, physique.</p>
+                  <span class="date">2024 - 2027</span>
+              </div>
+          </div>
+  
+          <div class="timeline-item right">
+              <div class="timeline-content">
+                  <h4>💼 Mains d'argent - Blois</h4>
+                  <p>Compagnon d'emplette pour personnes âgées, accompagnement et aide aux courses.</p>
+                  <span class="date">2024 - 2025</span>
+              </div>
+          </div>
+  
+          
+  
+          <div class="timeline-item lef">
+              <div class="timeline-content">
+                  <h4>🎓 Lycée Polyvalent Nelson Mandela - Poitiers</h4>
+                  <p>Spécialités : Numérique, sciences de l’ingénieur, mathématiques (mention Assez Bien).</p>
+                  <span class="date">2022 - 2024</span>
+              </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-content">
+                <h4>🏃 Urban Trail - Poitiers</h4>
+                <p>Bénévolat, gestion des stands de ravitaillement et assistance aux coureurs.</p>
+                <span class="date">2023 - 2024</span>
+            </div>
+        </div>
+  
+          <div class="timeline-item left">
+              <div class="timeline-content">
+                  <h4>🎓 Lycée Victor Hugo - Poitiers</h4>
+                  <p>Section Européenne espagnol.</p>
+                  <span class="date">2021 - 2022</span>
+              </div>
+          </div>
+  
+          <div class="timeline-item right">
+              <div class="timeline-content">
+                  <h4>🎓 Collège Henri IV - Poitiers</h4>
+                  <p>Section Européenne espagnol - DNB Mention Bien.</p>
+                  <span class="date">2017 - 2021</span>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+    <!-- Section Projets -->
+    <section class="container section text-dark">
+        <h2>Projets</h2>
+
+        <div class="project-bubble">
+            <h3>Projet Pac-Man en Python</h3>
+            <div class="project-content">
+                <div class="project-text">
+                    <p>Développement d'un jeu Pac-Man en Python avec Pygame.</p>
+                    <strong>🔹 Technologies utilisées :</strong> Python, Pygame<br>
+                    <strong>🔹 Objectif :</strong> Reproduire le gameplay classique de Pac-Man.<br>
+                    <strong>🔹 Fonctionnalités :</strong>
+                    <ul>
+                        <li>Déplacement du personnage principal dans un labyrinthe</li>
+                        <li>Gestion des collisions avec les murs, les pastilles et les fantômes</li>
+                        <li>Comportement des ennemis avec des IA basiques</li>
+                        <li>Système de score et vies limitées</li>
+                        <li>Effets visuels et animations</li>
+                    </ul>
+                </div>
+                <div class="diaporama-section">
+                    <h4 class="diaporama-title">Diaporama du projet</h4>
+                    <div class="pdf-thumbnail-container">
+                        <img src="./photos/Projet-Nsi.png" alt="Miniature du diaporama" class="pdf-thumbnail" id="pdf-thumbnail">
+                    </div>
+                    <div class="text-center py-3">
+                        <a href="NSI.pdf" class="download-btn" id="download-pdf" download="NSI.pdf">Télécharger le PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-bubble">
+            <h3>SAE-105 - Traiter des données</h3>
+            <div class="project-content">
+                <div class="project-text">
+                    <p>Dans le cadre de notre projet du semestre 1 en BUT R&T, nous avons conçu un programme en Python permettant d'analyser un fichier de logs de messagerie. Nous avons extrait les données pertinentes et les avons restituées sous forme de rapports textuels ainsi que de visualisations interactives sur un site web, en utilisant Chart.js pour les graphiques et des tableaux dynamiques.</p>
+                    <strong>🔹 Technologies utilisées :</strong> Python, HTML/CSS, Chart.js<br>
+                    <strong>🔹 Objectif :</strong> Analyser un fichier de logs et restituer les données sous forme de dashboard interactif.<br>
+                    <strong>🔹 Fonctionnalités :</strong>
+                    <ul>
+                        <li>Lecture et traitement de fichiers logs</li>
+                        <li>Extraction d'informations pertinentes (connexions, erreurs, adresses IP, etc.)</li>
+                        <li>Affichage des statistiques sous forme de tableaux</li>
+                        <li>Génération de graphiques interactifs avec Chart.js</li>
+                    </ul>
+                </div>
+                <div class="diaporama-section">
+                    <h4 class="diaporama-title text-body">Aperçu du projet</h4>
+                    <div class="defilement-container">
+                        <img src="./photos/SAE105.png" alt="Aperçu du projet SAE-105" class="defilement border border-dark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up pour afficher le PDF -->
+    <div id="pdf-popup" class="pdf-popup">
+        <div class="pdf-popup-content">
+            <span class="close-btn" id="close-pdf-popup">&times;</span>
+            <iframe src="NSI.pdf" class="pdf-iframe"></iframe>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>Sources : https://verpex.com/blog/website-tips/how-to-create-a-css-only-infinite-scroll-animation</p>
+        <p>https://leonawicz.github.io/mapmate/articles/networks.htm</p>
+        <p>Contact : <a href="mailto:thibault.rigallaud@orange.fr">thibault.rigallaud@orange.fr</a></p>
+        <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        <p>&copy; 2025 Thibault Rigallaud</p>
+    </footer>
+</body>
+</html>

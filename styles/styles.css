@@ -1,0 +1,396 @@
+/* styles.css */
+
+/* Styles existants */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-size: cover;
+    color: black;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.section {
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f39c12 !important;
+}
+
+footer a {
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+.project-bubble {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.project-bubble:hover {
+    transform: scale(1.04);
+}
+
+/* Styles pour le contenu du projet et l'image cliquable */
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligner en haut */
+    gap: 20px; /* Espace entre le texte et l'image */
+}
+
+.project-text {
+    flex: 1; /* Prend l'espace disponible */
+}
+
+.diaporama-section {
+    text-align: center; /* Centrer le texte et l'image */
+}
+
+.diaporama-title {
+    font-size: 1.25rem;
+    color: #f39c12;
+    margin-bottom: 10px; /* Espace entre le titre et l'image */
+}
+
+.pdf-thumbnail-container {
+    display: inline-block;
+    max-height: 200px; /* Limite la hauteur de la miniature */
+    overflow: hidden;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.pdf-thumbnail {
+    width: 300px; /* Taille de la miniature */
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.pdf-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.defilement-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Ajuste la taille selon tes besoins */
+    height: 200px; /* Ajuste la hauteur selon l'image */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.defilement {
+    transition: transform 2s ease-in-out;
+    display: block;
+    width: 100%;
+}
+
+.defilement-container:hover .defilement {
+    transform: translateY(-65%); /* Ajuste la valeur selon la taille de l'image */
+}
+
+
+/* Styles pour la pop-up PDF */
+.pdf-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-popup-content {
+    background: white;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #f39c12;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Bouton de téléchargement personnalisé */
+.btn-custom {
+    background-color: #f39c12;
+    border-color: #e67e22;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22;
+    border-color: #f39c12;
+}
+/* Style pour le bouton de téléchargement */
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: #f39c12;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    background: #e67e22;
+}
+
+
+.download-btn:active {
+    transform: scale(0.95);
+}
+
+/* Effet d'onde au clic */
+.download-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f39c12;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.download-btn:active::after {
+    opacity: 1;
+}
+
+.image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #f39c12, #e67e22);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 45%;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 55%;
+}
+
+.timeline-content {
+    padding: 20px;
+    border-left: 4px solid #f39c12;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-content .date {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f39c12;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    top: 5px; /* Remonte légèrement la date */
+}
+
+/* Ajout des points sur la ligne centrale */
+.timeline-item::before {
+    content: "•";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f39c12;
+    border-radius: 50%;
+    top: 50%;
+    left: calc(50% - 10px);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* Nouvelle animation infinie */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 10)); /* 10 cartes × largeur de 250px */
+    }
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .carousel {
+    display: flex;
+    width: calc(250px * 10); /* Double de la largeur nécessaire */
+    animation: scroll 20s linear infinite;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px lightgray;
+    padding: 30px;
+    margin-right: 20px; /* Espace entre les cartes */
+    flex: 0 0 230px; /* 250px - margin-right */
+    text-align: center;
+    justify-content: space-between; /* Pour répartir les éléments uniformément */
+    align-items: center; /* Centrer les éléments */
+  }
+.card img {
+    width: 50px; /* Ajuste selon besoin */
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.card .level {
+    margin-top: auto; /* Permet de pousser cet élément vers le bas */
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column; /* Colonne sur mobile */
+        align-items: center; /* Centrer le contenu */
+    }
+    .project-text {
+        text-align: center; /* Centrer le texte sur mobile */
+        margin-bottom: 20px; /* Espace entre le texte et l'image */
+    }
+    .pdf-thumbnail-container {
+        max-width: 100%; /* Prendre toute la largeur sur mobile */
+    }
+    .defilement-container {
+        max-width: 100%; /* Prendre toute la largeur sur mobile */
+    }
+}
